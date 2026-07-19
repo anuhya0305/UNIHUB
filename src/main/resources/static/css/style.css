@@ -140,3 +140,51 @@ nav a:hover{
     color:#555;
     line-height:1.8;
 }
+
+/* Login Page */
+
+.login-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#eef4ff;
+}
+.login-box{
+    width:380px;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+.login-box h2{
+    text-align:center;
+    color:#1e3a8a;
+}
+.login-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+.login-box button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.login-box button:hover{
+    background:#1d4ed8;
+}
