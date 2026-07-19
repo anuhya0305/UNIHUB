@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - UNIHUB</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="login-container">
+    <div class="login-box">
+        <h2>Create Account</h2>
+        <p>Join the UNIHUB community</p>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit">
+                Register
+            </button>
+        </form>
+        <p>
+            Already have an account?
+            <a th:href="@{/login}">
+                Login
+            </a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
