@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>UNIHUB Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+<div class="dashboard">
+    <div class="sidebar">
+        <h2>UNIHUB</h2>
+        <ul>
+            <li><a href="#">🏠 Dashboard</a></li>
+            <li><a th:href="@{/resources}">
+                📚 Manage Resources
+            </a></li>
+            <li><a href="#">🤝 Skill Exchange</a></li>
+            <li><a href="#">📅 Events</a></li>
+            <li><a href="#">📢 Announcements</a></li>
+            <li><a href="#">👤 Profile</a></li>
+            <li><a href="/">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to UNIHUB</h1>
+        <p>Your university collaboration platform.</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -188,3 +188,41 @@ nav a:hover{
 .login-box button:hover{
     background:#1d4ed8;
 }
+
+/* Dashboard */
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+.sidebar{
+    width:250px;
+    background:#1e3a8a;
+    color:white;
+    padding:30px;
+}
+.sidebar h2{
+    margin-bottom:40px;
+}
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+.sidebar li{
+    margin:18px 0;
+}
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+}
+.sidebar a:hover{
+    color:#93c5fd;
+}
+.content{
+    flex:1;
+    padding:40px;
+    background:#f5f7fb;
+}
+.content h1{
+    color:#1e3a8a;
+}

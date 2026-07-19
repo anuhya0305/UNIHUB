@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Edit Resource</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h2>Edit Resource</h2>
+
+        <form th:action="@{/resources/update}"
+              th:object="${resource}"
+              method="post">
+
+            <input type="hidden"
+                   th:field="*{id}">
+
+            <input type="text"
+                   th:field="*{title}"
+                   required>
+
+            <input type="text"
+                   th:field="*{subject}"
+                   required>
+
+            <textarea
+                    th:field="*{description}"
+                    rows="5"
+                    style="width:100%;padding:12px;"></textarea>
+
+            <button type="submit">
+
+                Update Resource
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

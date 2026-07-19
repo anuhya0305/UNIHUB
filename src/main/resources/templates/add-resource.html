@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title>Add Resource</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h2>Add Resource</h2>
+
+        <form th:action="@{/resources/add}"
+              th:object="${resource}"
+              method="post">
+
+            <input
+                    type="text"
+                    th:field="*{title}"
+                    placeholder="Resource Title"
+                    required>
+
+            <input
+                    type="text"
+                    th:field="*{subject}"
+                    placeholder="Subject"
+                    required>
+
+            <textarea
+                    th:field="*{description}"
+                    placeholder="Description"
+                    rows="5"
+                    style="width:100%;padding:12px;border-radius:8px;margin-bottom:15px;"></textarea>
+
+            <button type="submit">
+
+                Add Resource
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
